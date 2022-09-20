@@ -31,7 +31,7 @@ const getCV = (req, res) => {
     lang.push(language[key]);
   }
 
-  res.render("cv", { name: "Tasnim Ahmed", educations: edus, experience: expe, language: lang });
+  res.render("cv", { name: "Abrar Chowdhury", educations: edus, experience: expe, language: lang });
 };
 
 module.exports = { getCV: getCV };
