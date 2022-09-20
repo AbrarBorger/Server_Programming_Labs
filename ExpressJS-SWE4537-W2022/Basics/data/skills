@@ -1,0 +1,18 @@
+{
+  "1": {
+    "title": "Team combination",
+    "level": "70%"
+  },
+  "2":{
+    "title": "Leadership",
+    "level": "95%"
+  },
+  "3":{
+    "title": "Management",
+    "level": "85%"
+  },
+  "4":{
+    "title": "Analytical",
+    "level": "78%"
+  }
+}
