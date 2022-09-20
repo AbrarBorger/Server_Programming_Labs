@@ -1,4 +1,6 @@
+const exp = require("constants");
 const fs = require("fs");
+const { CLIENT_RENEG_LIMIT } = require("tls");
 
 const getCV = (req, res) => {
   educations = fs.readFileSync("data/education", { encoding: "utf-8" });
@@ -6,8 +8,10 @@ const getCV = (req, res) => {
 
   experience = fs.readFileSync("data/experience", { encoding: "utf-8" });
   experience = JSON.parse(String(experience));
-  
-  exp = [];
+
+  language = fs.readFileSync("data/language", { encoding: "utf-8" });
+  language = JSON.parse(String(language));
+  console.log(experience);
 
   edus = [];
 
@@ -15,12 +19,19 @@ const getCV = (req, res) => {
     edus.push(educations[key]);
   }
 
+  expe = [];
+
   for (let key in experience) {
-    edus.push(experience[key]);
+    expe.push(experience[key]);
   }
 
+  lang = [];
 
-  res.render("cv", { name: "Tasnim Ahmed", educations: edus, experience: exp});
+  for (let key in language) {
+    lang.push(language[key]);
+  }
+
+  res.render("cv", { name: "Tasnim Ahmed", educations: edus, experience: expe, language: lang });
 };
 
 module.exports = { getCV: getCV };

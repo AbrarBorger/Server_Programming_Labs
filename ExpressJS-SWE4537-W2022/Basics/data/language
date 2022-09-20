@@ -1,0 +1,14 @@
+{
+  "1": {
+    "title": "Bootstrap",
+    "level": "70%"
+  },
+  "2":{
+    "title": "MERN",
+    "level": "95%"
+  },
+  "3":{
+    "title": "Python",
+    "level": "85%"
+  }
+}
