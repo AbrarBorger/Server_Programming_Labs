@@ -1,7 +1,18 @@
 {
   "1": {
-    "title": "Front End Developer",
-    "duration": "2011 - 2013",
-    "text": "Great front end developer."
+    "title": "Internship / abc initiatives",
+    "duration": "2019 - 2019",
+    "text": "Managed the front end of most of the projects"
+  },
+  "2": {
+    "title": "UI/UX designer / abc initiatives",
+    "duration": "2020 - 2020",
+    "text": "Became a full time front end developer for the company"
+  },
+  "3": {
+    "title": "Full Stack developer / Intellisense Circle",
+    "duration": "2020-",
+    "text": "Became a key member of the devops"
   }
+  
 }
